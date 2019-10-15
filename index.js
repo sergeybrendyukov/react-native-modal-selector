@@ -14,6 +14,8 @@ import {
     ViewPropTypes as RNViewPropTypes,
 } from 'react-native';
 
+import { Icon } from 'react-native-elements';
+
 import styles from './style';
 
 const ViewPropTypes = RNViewPropTypes || View.propTypes;
@@ -318,7 +320,7 @@ export default class ModalSelector extends React.Component {
                     <TouchableOpacity
                         hitSlop={this.props.modalOpenerHitSlop}
                         activeOpacity={this.props.touchableActiveOpacity}
-                        style={this.props.touchableStyle}
+                        style={[{justifyContent: 'center'}, this.props.touchableStyle]}
                         onPress={this.open}
                         disabled={this.props.disabled}
                         accessible={this.props.openButtonContainerAccessible}
@@ -326,6 +328,7 @@ export default class ModalSelector extends React.Component {
                         <View style={this.props.childrenContainerStyle} pointerEvents="none">
                             {this.renderChildren()}
                         </View>
+                        <View style={{position: 'absolute', right: 0}}><Icon name="keyboard-arrow-down" color="grey" /></View>
                     </TouchableOpacity>
                 }
             </View>

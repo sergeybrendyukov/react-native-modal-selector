@@ -1,7 +1,7 @@
 {
   "name": "react-native-modal-selector",
   "version": "1.1.1",
-  "description": "A cross-platform (iOS / Android), selector/picker component for React Native that is highly customizable and supports sections.",
+  "description": "Clone of react-native-modal-selector of peacechen, adding dropdown icon on the left",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peacechen/react-native-modal-selector.git"
+    "url": "git+https://github.com/sergeybrendyukov/react-native-modal-selector.git"
   },
   "keywords": [
     "react-native",
@@ -25,18 +25,18 @@
     "react-component"
   ],
   "dependencies": {
+    "react-native-elements": "^1.1.0",
     "prop-types": "^15.5.10"
   },
-  "author": "Daniel Korger <dan@imake.io>",
+  "author": "Sergey Brendyukov <topdev@askfirst.space>",
   "contributors": [
-    "Alex Spring <notlose@hotmail.com>",
-    "Peace Chen (https://github.com/peacechen)"
+    "Sergey Brendyukov <topdev@askfirsrt.space>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/peacechen/react-native-modal-selector/issues"
+    "url": "https://github.com/sergeybrendyukov/react-native-modal-selector/issues"
   },
-  "homepage": "https://github.com/peacechen/react-native-modal-selector",
+  "homepage": "https://github.com/sergeybrendyukov/react-native-modal-selector",
   "directories": {
     "doc": "docs"
   },
