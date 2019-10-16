@@ -1,6 +1,6 @@
 {
   "name": "react-native-modal-selector",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Clone of react-native-modal-selector of peacechen, adding dropdown icon on the left",
   "main": "index.js",
   "scripts": {
