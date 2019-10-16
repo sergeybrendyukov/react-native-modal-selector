@@ -262,7 +262,7 @@ export default class ModalSelector extends React.Component {
 
         return (
             <Overlay {...overlayProps}>
-                <View style={[styles.overlayStyle, this.props.overlayStyle]}>
+                <TouchableOpacity style={[styles.overlayStyle, this.props.overlayStyle]} onPress={this.close} activeOpacity={1}>
                     <View style={[styles.optionContainer, this.props.optionContainerStyle]}>
                         <ScrollView keyboardShouldPersistTaps={this.props.keyboardShouldPersistTaps} accessible={this.props.scrollViewAccessible} accessibilityLabel={this.props.scrollViewAccessibilityLabel}>
                             <View style={{paddingHorizontal: 10}}>
@@ -277,7 +277,7 @@ export default class ModalSelector extends React.Component {
                             </View>
                         </TouchableOpacity>
                     </View>
-                </View>
+                </TouchableOpacity>
             </Overlay>);
     }
 
